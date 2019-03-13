@@ -1,79 +1,152 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!--css files-->
-           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-           <link rel="stylesheet" href="css/style-index.css">
-        <!--javascript files-->
-          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <!--responsive meta tag-->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     </head>
-    <body>
-      <div class="browser">
-          <div class="dropdown">  
-                <button role="button" type="button" class="btn"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="pngs/Logopartial.png" alt="" id="btn-image"> 
-                </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-          </div>
-              <div class="background">
-    
-              </div>
-              <div id="contents">
-                    <div class="container-A">
-                         <abbr title="ABOUT"><a href="about.html"><img src="jpegs/about.jpg" alt="" class="about"></a></abbr>
-                         <div class="overlay">ABOUT</div>
+
+<head>
+    <!--css files-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style-index.css">
+    <!--javascript files-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!--responsive meta tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Pre-load trial-->
+    <link rel="preload" href="pngs/Logopartial.png" as="image">
+
+</head>
+
+<body onload="myFunction()">
+        <div id="loader"></div>
+        <iframe src="music/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        <audio id="myAudio" autoplay loop>
+            <source src="music/ElfaroPrjTT4.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+    </div>
+        <div  style="display:none;" id="myDiv" class="animate-bottom" >
+                    <!--B R O W S E R    D I S P L A Y   C O D E    S T A R T S   H E R E -->
+                     <div class="browser">
+                        <div class="dropdown">
+                            <button role="button" type="button" class="btn" data-toggle="dropdown" aria-haspopup="true"   aria-expanded="false">
+                                <img src="pngs/Logopartial.png" alt="" id="btn-image">
+                            </button>
+                            
+                        </div>
+                        <div class="browser-m">
+                                     <button onclick="soundBrowser()" type="button" class="btn soundButton" id="trial"><img src="pngs/pause.png" width="60px" class="icon-m"></button>
+                                     </div>
+                        <div class="background">
+                        
+                        </div>
+                        <div id="contents">
+                            <div class="container-A">
+                                <abbr title="ABOUT"><a href="about.html"><img src="jpegs/about.jpg" alt="" class="about"></a></abbr>
+                                <div class="overlay">ABOUT</div>
+                            </div>
+                            <div class="container-G">
+                                <abbr title="GALLERY"><a href="gallery.html"><img src="jpegs/gallery.jpg" alt="" class="gallery"></a></abbr>
+                                <div class="overlay">GALLERY</div>
+                            </div>
+                            <div class="container-P">
+                                <abbr title="PROJECTS"><a href="projects.html"><img src="jpegs/project.jpg" alt="" class="project"></a></abbr>
+                                <div class="overlay">PROJECTS</a></div>
+                            </div>
+                            <div class="container-B1">
+                                <abbr title="BLOGS"><a href="blog-home.html"><img src="jpegs/blogs.jpg" alt="" class="blogs"></a></abbr>
+                                <div class="overlay">BLOGS</div>
+                            </div>
+                            <div class="container-C">
+                                <abbr title="CONTACTS"><a href="contacts.html"><img src="jpegs/contacts.jpg" alt="" class="contacts"></a></abbr>
+                                <div class="overlay">CONTACTS</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="container-G">
-                        <abbr title="GALLERY"><a href="gallery.html"><img src="jpegs/gallery.jpg" alt="" class="gallery"></a></abbr>
-                        <div class="overlay">GALLERY</div>
+        <!--B R O W S E R    D I S P L A Y   E N D S     H E R E -->
+        <!--M O B I L E    D I S P L A Y   C O D E    S T A R T S   H E R E -->
+                <div class="mobile">
+                        <div class="dropdown-m">
+                            <a href="index.html">
+                                <button role="button" type="button" class="btn" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <img src="pngs/Logopartial.png" alt="" id="btn-image">
+                                </button>
+                            </a>
+                        </div>
+                        <div class="icon-container">
+                
+                                    <div class="mobile-A">
+                                        <abbr title="ABOUT US"><a href="about.html"><img src="pngs/mobile/AboutBasic100.png" width="100px" class="icons" ></a></abbr>
+                                        <div class="overlay-m">ABOUT US</div>
+                                     </div>
+                                     <div class="mobile-G">
+                                         <abbr title="GALLERY"><a href="gallery.html"><img src="pngs/mobile/GalleryActual100.png" width="100px" class="icons" ></a></abbr>
+                                         <div class="overlay-m">GALLERY</div>
+                                     </div>
+                                     <div class="mobile-P">
+                                         <abbr title="PROJECTS"><a href="project.html"><img src="pngs/mobile/workerActual100.png" width="100px" class="icons" ></a></abbr>
+                                         <div class="overlay-m">PROJECTS</div>
+                                     </div>
+                                     <div class="mobile-B">
+                                         <abbr title="BLOGS"><a href="blog-home.html"><img src="pngs/mobile/BlogActual100.png" width="100px" class="icons" ></a></abbr>
+                                         <div class="overlay-m">BLOGS</div>
+                                     </div>
+                                     <div class="mobile-C">
+                                         <abbr title="CONTACTS"><a href="contacts.html"><img src="pngs/mobile/ContactActual100.png" width="100px" class="icons" ></a></abbr>
+                                         <div class="overlay-m">CONTACTS</div>
+                                     </div>
+                                     <div class="mobile-m">
+                                     <button onclick="soundMobile()" type="button" class="btn sound_btn" id="trial-m"><img src="pngs/pause.png" width="85px" class="icon-m"></button>
+                                     </div>
+                        </div>
                     </div>
-                    <div class="container-P">
-                         <abbr title="PROJECTS"><a href="projects.html"><img src="jpegs/project.jpg" alt="" class="project"></a></abbr>
-                         <div class="overlay">PROJECTS</a></div>
-                    </div>
-                          <div class="container-B1">
-                              <abbr title="BLOGS"><a href="blog-home.html"><img src="jpegs/blogs.jpg" alt="" class="blogs"></a></abbr>
-                              <div class="overlay">BLOGS</div>
-                         </div>           
-                    <div class="container-C">
-                          <abbr title="CONTACTS"><a href="contacts.html"><img src="jpegs/contacts.jpg" alt="" class="contacts"></a></abbr>
-                          <div class="overlay">CONTACTS</div>
-                    </div>
-              </div>   
-      </div>
-      <div class="mobile">
-          <div class="dropdown-m">
-              <a href="index.html">
-                <button role="button" type="button" class="btn"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="pngs/Logopartial.png" alt="" id="btn-image"> 
-                </button>
-              </a>
-          </div>
-          <div class="icons">
-              <table id="table">
-                <tr>
-                     <div>
-                        <td colspan="2"><abbr title="ABOUT US"><a href="about.html"><img src="pngs/about.png" width="100px" id="icons"></a></abbr></td>
-                     </div>
-                 </tr>
-                <tr>
-                      <td><abbr title="GALLERY"><a href="gallery.html"><img src="pngs/gallery.png" width="100px" id="icons"></a></abbr></td>   
-                      <td><abbr title="PROJECTS"><a href="project.html"><img src="pngs/project.png" width="100px" id="icons"></a></abbr></td>
-                </tr>
-                <tr>
-                    <td><abbr title="BLOGS"><a href="blog-home.html"><img src="pngs/blogs.png" width="100px" id="icons"></a></abbr></td>
-                    <td><abbr title="CONTACTS"><a href="contacts.html"><img src="pngs/contacts.png" width="100px" id="icons"></a></abbr></td>
-                </tr>
-                </table>
-          </div>   
-      </div>
-    </body>
+    </div>              
+    <!--M O B I L E    D I S P L A Y   C O D E    E N D S   H E R E -->
+    <!--S C R I P T   T O   A D D    B A C K G R O U N D   M U S I C   T O   W E B    S I T E-->
+    <script>
+        let soundOn_M = true;
+        let soundOn_B=true;
+        var MusicControl = document.getElementById("trial");
+        var MusicControl_m = document.getElementById("trial-m");
+        let audio=document.getElementById("myAudio");
+        function soundMobile(){
+            if(!soundOn_M){
+                audio.play();
+                MusicControl_m.innerHTML ='<img src="pngs/pause.png" width="85px" class="icon-m" >';
+                soundOn_M=true;
+            } else {
+                audio.pause();
+                MusicControl_m.innerHTML ='<img src="pngs/play.png" width="85px" class="icon-m">';
+                soundOn_M=false;
+            }
+        }
+        function soundBrowser(){
+            if(!soundOn_B){
+                audio.play();
+                MusicControl.innerHTML ='<img src="pngs/pause.png" width="60px" >';
+                soundOn_B=true;
+            }
+             else {
+                audio.pause();
+                MusicControl.innerHTML ='<img src="pngs/play.png" width="60px" >';
+                soundOn_B=false;
+            }
+        }
+             var myVar;
+
+            function myFunction() {
+              myVar = setTimeout(showPage, 3000);
+            }
+
+            function showPage() {
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+            }
+     </script>
+</body>
+
 </html>
