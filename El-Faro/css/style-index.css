@@ -42,7 +42,7 @@
     -webkit-filter: brightness(200%);
 }
 .browser-m{
-  position: absolute; 
+  position: absolute;
   margin-left: 1200px;
 }
 .soundButton{
@@ -203,11 +203,14 @@
   /*browser breakpoint*/
   @media screen and (max-width:1340px){
     body {
-      background: url('../jpegs/VioletLights.jpg') no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+
+      background: url('../jpegs/VioletLight1.jpg');
+      background-repeat: no-repeat;
+      background-size: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
     }
     .browser,.dropdown-menu{
       display: none;
@@ -225,27 +228,27 @@
       .mobile-A{
         position: absolute;
         margin-top: 30px;
-        margin-left: 220px;   
+        margin-left: 220px;
       }
       .mobile-G{
         position: absolute;
         margin-top: 30px;
-        margin-left: 85px; 
+        margin-left: 85px;
       }
       .mobile-P{
         position: absolute;
         margin-top: 175px;
-        margin-left: 85px;      
+        margin-left: 85px;
       }
       .mobile-B{
         position: absolute;
         margin-top: 175px;
-        margin-left: 220px;        
+        margin-left: 220px;
       }
       .mobile-C{
         position: absolute;
         margin-top: 325px;
-        margin-left: 85px;      
+        margin-left: 85px;
       }
       .mobile-m{
         position: absolute;
@@ -336,12 +339,12 @@
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
+  from { bottom:-100px; opacity:0 }
   to { bottom:0px; opacity:1 }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
   to{ bottom:0; opacity:1 }
 }
 
