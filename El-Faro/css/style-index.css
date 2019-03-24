@@ -202,17 +202,10 @@
   }
   /*browser breakpoint*/
   @media screen and (max-width:1340px){
-    body {
-
+    body{
       background: url('../jpegs/VioletLight1.jpg');
-      background-repeat: no-repeat;
-      background-size: auto;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: auto;
-      margin-bottom: auto;
     }
-    .browser,.dropdown-menu{
+    .browser{
       display: none;
     }
     .btn{
@@ -302,53 +295,33 @@
    }
   /*---------------M O B I L E    S T Y L E   E N D S    H E R E------------------*/
   /*LOADER CSS*/
-  /* Center the loader */
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border-radius: 300px;
-  border: 16px dotted #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s;
-}
-
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 }
-  to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom {
-  from{ bottom:-100px; opacity:0 }
-  to{ bottom:0; opacity:1 }
-}
-
-#myDiv {
-  position: relative;
-  display: none;
-}
+  svg {
+    display:block;
+    width:258px;
+    height:258px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+  }
+  
+  .tree {
+    fill: #f9d311;
+  }
+  
+  .circle-mask {
+    transform-origin: 50% 90%;
+    animation: scale 5s infinite ease-out;
+  }
+  
+  @keyframes scale {
+    0%, 100% {
+      transform: scale(0.0);
+    }
+    7%, 90% {
+      transform: scale(0.4);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
