@@ -1,0 +1,35 @@
+body{
+    border: 3px solid blueviolet;
+}
+.carousel{
+    border: solid orange 3px;
+}
+#banner{
+    text-align: center;
+    background-image: url('../pngs/banner-10.png');
+    background-repeat: no-repeat;
+    color:white;
+}
+@media screen and (max-width: 768px){
+    #banner{
+        display: none;
+    }
+    .carousel-inner{
+        height: auto;
+    }
+}
+@media screen and (min-width: 768px){
+    #banner-m{
+        display: none;
+    }
+}
+#p1{
+    color: black;
+}
+#p2{
+    color: azure;
+    text-align: right;
+}
+#banner-m{    
+    background: url("../pngs/banner-7.png")
+}   

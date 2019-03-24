@@ -1,0 +1,96 @@
+/*---------------------------B  A  C  K  G  R  O  U  N  D------------------------*/
+.background{
+    position: absolute;
+    content: url('../jpegs/blog-home.jpg');
+    z-index: 0;
+}
+/*-------------------------------------------------------------------------------------*/
+.container-E{
+    position: absolute;
+    margin-left: 803px;
+    margin-top: 151px;
+}
+.container-E:hover{
+    -webkit-filter: brightness(300%);
+}
+/*------------------------------------------------------------------------------------------*/
+.container-AC{
+    position: absolute;
+    margin-left: 604px;
+    margin-top: 222px;
+}
+.container-AC:hover{
+    -webkit-filter: brightness(300%);
+}
+/*------------------------------------------------------------------------------------------*/
+.container-ET{
+    position: absolute;
+    margin-left: 981px;
+    margin-top: 224px;
+}
+.container-ET:hover{
+    -webkit-filter: brightness(300%);
+}
+/*------------------------------------------------------------------------------------------*/
+.container-NU{
+    position: absolute;
+    margin-left: 729px;
+    margin-top: 302px;
+}
+.container-NU:hover{
+    -webkit-filter: brightness(300%);
+}
+/*------------------------------------------------------------------------------------------*/
+.container-S{
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 379px;
+}
+.container-S:hover{
+    -webkit-filter: brightness(300%);
+}
+/*------------------------------------------------------------------------------------------*/
+.container-BH{
+    position: absolute;
+    margin-left: 959px;
+    margin-top: 379px;
+}
+.container-BH:hover{
+    -webkit-filter: brightness(300%);
+}
+/*------------------------------------------------------------------------------------------*/
+.container-EB{
+    position: absolute;
+    margin-left: 831px;
+    margin-top: 452px;
+}
+.container-EB:hover{
+    -webkit-filter: brightness(300%);
+}
+/*------------------------------------------------------------------------------------------*/
+.container-BS{
+    position: absolute;
+    margin-left: 530px;
+    margin-top: 522px;
+}
+.container-BS:hover{
+    -webkit-filter: brightness(300%);
+}
+/*------------------------------------------------------------------------------------------*/
+.container-T{
+    position: absolute;
+    margin-left: 905px;
+    margin-top: 522px;
+}
+.container-T:hover{
+    -webkit-filter: brightness(300%);
+}
+/*------------------------------------------------------------------------------------------*/
+.container-H{
+    position: absolute;
+    margin-left: 114px;
+    margin-top: 365px;
+}
+.container-H:hover{
+    -webkit-filter: brightness(400%);
+}
