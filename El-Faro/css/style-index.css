@@ -186,9 +186,10 @@
   }
   .icons{
     border-radius: 25px;
-    border: solid white 1px;
+    
     padding: 20px;
     -webkit-filter: brightness(200%);
+    background: rgba(255, 68, 0, 0.596);
   }
   .icons:hover{
     border: white solid 1px;
@@ -203,7 +204,7 @@
   /*browser breakpoint*/
   @media screen and (max-width:1340px){
     body{
-      background: url('../jpegs/VioletLight1.jpg');
+      background: url('../images/new-home1.jpg');
     }
     .browser{
       display: none;

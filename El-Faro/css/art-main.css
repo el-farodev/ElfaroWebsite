@@ -29,6 +29,24 @@ body {
   -webkit-filter: contrast(150%);
   -webkit-filter: brightness(90%);
 }
+#home-banner-ET{
+  position: absolute;
+  width: 100%;
+  -webkit-filter: contrast(150%);
+  -webkit-filter: brightness(100%);
+}
+#logo-home{
+  z-index: 9999;;
+  margin-top: 8%;
+  margin-left: 2.5%;
+  position: absolute;
+  border-radius: 15px;
+}
+#logo-home:hover{
+  -webkit-filter: brightness(150%);
+  background: rgba(128, 0, 128, 0.623);
+}
+
 #panel{
   margin-left: 25%;
   margin-right: 25%;
@@ -50,7 +68,6 @@ body {
   text-align: center;
   font-family: "Libre Baskerville", serif;
 }
-
 /* ------------------------------------------------------------------- 
  * ## links
  * ------------------------------------------------------------------- */
@@ -1530,7 +1547,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .entries .item-entry__thumb-link::before {
   content: "";
   display: block;
-  background: rgba(255, 255, 255, 0.6);
   opacity: 0;
   visibility: hidden;
   position: absolute;
@@ -2519,6 +2535,8 @@ body.search-is-visible {
   height: 100%;
   width: 100%;
   padding-top: 3rem;
+  -webkit-filter: brightness(200%);
+  -webkit-filter: contrast(125%);
 }
 
 .featured__slide .entry::before {
@@ -4122,9 +4140,9 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
   .comment-respond form {
     padding-top: 3rem;
   }
+  
 
 }
-
 
 /* ===================================================================
  * # page styles and page components
@@ -4215,5 +4233,27 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 #cForm input[type="submit"], #cForm .btn {
   margin-top: 6rem;
 }
-
+.advt{
+  position: absolute;
+  text-align: center;
+  margin:0% 25% 0% 25%;
+  width: 50%;
+  height: auto;
+  display: inline-block;
+  background: rgba(241, 238, 238, 0.925);
+}
+.foot-container{
+   content: url('../images/banner1.jpg');
+   height: 300px;
+   width: 100%;
+}
+.over-img{
+  position: absolute;
+  color: black;
+  font-size: 25px;
+  background: rgba(241, 238, 238, 0.514);
+  width: 100%;
+  bottom: 25%;
+  transition: .5s ease;
+}
 /*# sourceMappingURL=main.css.map */

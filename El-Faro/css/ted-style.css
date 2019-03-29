@@ -65,7 +65,16 @@ ul {
 }
 
 /*--/header --*/
-
+#logo-home{
+	z-index: 9999;;
+	margin-left: 5%;
+	margin-top: 2%;
+	border-radius: 15px;
+	padding: 10;
+}
+#logo-home:hover{
+	-webkit-filter: brightness(150%);
+}
 /*-- top-bar-w3-agile --*/
 
 .header {
